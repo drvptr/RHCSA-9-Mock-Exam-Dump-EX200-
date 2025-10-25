@@ -111,7 +111,7 @@ On **serverb**, install **httpd** service.
 Configure the listen port to **88**, and serve files from `/containers` (create it).
 Create `/containers/index.html` with the following content:
  ```
- FROM docker.io/library/mysql:8
+ FROM docker.io/library/mysql-server
  CMD ["mysqld"]
  ```
 Make sure the server is accessible from **servera**.
